@@ -38,6 +38,15 @@ pipeline:
                   spec:
                     shell: Sh
                     command: echo "success"
+              - step:
+                  type: BuildAndPushDockerRegistry
+                  name: BuildAndPushDockerRegistry_1
+                  identifier: BuildAndPushDockerRegistry_1
+                  spec:
+                    connectorRef: <+input>
+                    repo: <+input>
+                    tags:
+                      - latest
           platform:
             os: Linux
             arch: Amd64
