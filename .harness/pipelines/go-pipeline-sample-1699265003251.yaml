@@ -6,9 +6,9 @@ pipeline:
   properties:
     ci:
       codebase:
-        build: <+input>
         connectorRef: account.Github_OAuth_1699264997537
-        repoName: go-pipeline-sample
+        repoName: akavakon72/go-pipeline-sample
+        build: <+input>
   stages:
     - stage:
         identifier: build
