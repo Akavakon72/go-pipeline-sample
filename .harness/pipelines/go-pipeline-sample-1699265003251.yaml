@@ -29,7 +29,7 @@ pipeline:
                   name: go_test
                   spec:
                     shell: Sh
-                    command: echo "test"
+                    command: go test
                   timeout: ""
                   type: Run
           platform:
