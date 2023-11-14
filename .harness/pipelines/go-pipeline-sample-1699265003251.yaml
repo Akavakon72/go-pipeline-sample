@@ -22,7 +22,7 @@ pipeline:
                   name: Run Unit Tests
                   spec:
                     connectorRef: <+input>
-                    image: golang:1.15
+                    image: golang:1.18
                     shell: Sh
                     command: |-
                       set +e
@@ -41,7 +41,7 @@ pipeline:
                   name: build app
                   spec:
                     connectorRef: <+input>
-                    image: golang:1.15
+                    image: golang:1.18
                     shell: Sh
                     command: |-
                       set +e
